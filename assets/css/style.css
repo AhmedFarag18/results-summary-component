@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    background-color: var(--White);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    padding: 30px 10px;
+}
+
+.card {
+    background: var(--White);
+    box-shadow: 15px 15px 30px 0px var(--Pale-blue);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 24px;
+    /* width: 645px; */
+}
+
+.card>div {
+    padding: 32px 16px;
+    flex: 1 1 calc(100% / 2)
+}
+
+.card-result {
+    background: linear-gradient(to bottom, var(--Light-slate-blue-background), #4132ef 80%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.result-title {
+    color: var(--Light-lavender);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.result-numbers {
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.result-big-num {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 100%;
+    color: var(--White);
+}
+
+.result-small-num {
+    color: var(--Light-lavender);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.result-content {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.result-content-title {
+    color: var(--White);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.result-content-desc {
+    color: var(--Light-lavender);
+    font-size: 16px;
+    width: 65%;
+    margin: auto;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+.card_summary {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.summary-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--Dark-gray-blue);
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item {
+    background-color: #3f922321;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-left-text {}
+
+.item.reaction {
+    background: hsla(0, 100%, 67%, 10%);
+    color: var(--light-red);
+}
+
+.item.memory {
+    background: hsla(39, 100%, 56%, 10%);
+    color: var(--orangey-yellow);
+}
+
+.item.verbal {
+    color: var(--Green-teal);
+    background: hsla(166, 100%, 37%, 10%);
+
+}
+
+.item.visual {
+    color: var(--Cobalt-blue);
+    background: hsla(234, 85%, 45%, 10%);
+}
+
+.item-right {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item-right-VarNum {
+    font-weight: 600;
+    color: var(--Dark-gray-blue);
+}
+
+.item-right-Var100 {
+    color: #aaa;
+}
+
+.summary-btn {
+    background: linear-gradient(var(--Dark-gray-blue), var(--Dark-gray-blue));
+    color: var(--White);
+    padding: 16px;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.summary-btn:hover {
+    background: linear-gradient(to bottom, var(--Light-slate-blue-background), #4132ef 80%);
+}
+
+@media (max-width:550px) {
+    body {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .card {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card>div {
+        flex: 1 1 calc(100% / 1)
+    }
+}
