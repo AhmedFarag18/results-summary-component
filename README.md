@@ -16,7 +16,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/results-summary-component-pqpB451_ww">
+    <a href="https://www.frontendmentor.io/solutions/results-summary-component-14_nIOsWLa">
       Challenge
     </a>
   </h3>
