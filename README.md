@@ -41,6 +41,7 @@
 
 - HTML
 - Css
+- <b>Bonus</b> Javascript (Get data from JSON File)
 
 ## Contact
 
